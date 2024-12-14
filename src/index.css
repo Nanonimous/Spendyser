@@ -17,12 +17,14 @@ nav{
   top: 2rem;
   z-index: 500;
   width: 100%;
+  background-color: transparent;
 }
 
 .container-navbar{
   padding-left: 2.3rem;
   padding-right: 2.3rem;
-  height: 3.7rem; 
+  height: 3.7rem;
+  background-color: transparent;
 }
 
 .main-navbar{
@@ -89,4 +91,93 @@ nav{
 
 .getstarted:hover{
   background-color: #CDCDCD; 
+}
+
+/* main section  */
+
+.container-main{
+  color:  white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top:7rem;
+  padding-bottom:1.5rem;
+  height: 125vh;
+  }
+
+.images-container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.image-city{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/city.png');
+  background-size: cover;
+  object-fit: cover;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.center-text{
+  top: -1em;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 9;
+  display: flex; 
+  justify-content: center; 
+}
+
+.center-text p{
+
+  color: white;
+  font-family: "Roboto Mono", serif;
+  font-size: 6.5em;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.image-mountain{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/mountain.png');
+  background-size: cover;
+  object-fit: cover;
+  background-color: transparent;
+  z-index: 8;
+}
+
+.image-moon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/moon.png');
+  background-size: cover;
+  object-fit: cover;
+  background-color: transparent;
+  z-index: 7;
+}
+
+.image-sky{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/sky.png');
+  background-size: cover;
+  object-fit: cover;
+  background-color: transparent;
+  z-index: 6;
 }
