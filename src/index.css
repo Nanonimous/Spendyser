@@ -1,6 +1,9 @@
 *{
   background-color: #000000;
-
+  overflow-x:hidden;
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
 }
 
 a{
@@ -58,7 +61,7 @@ nav{
 
 .nav-ul li a {
   text-decoration: none;
-  font-family: "Roboto Mono", serif;
+  font-family: "Geist Mono", monospace;
   font-weight: 500;
   font-size: .95rem;
   color: #e5e7ebdc;
@@ -72,7 +75,7 @@ nav{
 .getstarted{
   display: flex;
   align-items: center;
-  font-family: "Roboto Mono", serif;
+  font-family: "Geist Mono", monospace;
   font-weight: 560;
   font-size: .85rem;
   background-color: #FFFFFF;
@@ -95,7 +98,7 @@ nav{
 .getstarted-ham{
   display: flex;
   align-items: center;
-  font-family: "Roboto Mono", serif;
+  font-family: "Geist Mono", monospace;
   font-weight: 560;
   font-size: .85rem;
   background-color: #FFFFFF;
@@ -137,6 +140,7 @@ nav{
   transition: transform 0.5s ease;
 }
 
+
 /* navbar media query */
 @media (max-width: 768px) {
 
@@ -145,13 +149,13 @@ nav{
       transform: translateY(-1000px);
     }
     100%{
-      transform: translateY(0px);
+      transform: translateY(-1px);
     }
   }
 
   @keyframes navbar-close {
     0%{
-      transform: translateY(0px);
+      transform: translateY(-1px);
     }
     100%{
       transform: translateY(-1000px);
@@ -167,20 +171,23 @@ nav{
       position: absolute;
       top: 60px;
       left: 0;
-      width: 100%;
+      width: 86%;
       background-color: #000000;
       padding: 20px 0;
       text-align: center;
       gap: 15px;
       transform: translateY(-1000px);
+      border-radius: 10px;
     }
   
     /* Active Class to Show Menu */
     .nav-ul.nav-active {
       display: flex;
-      transform: translateY(0px);
+      transform: translateY(-1px);
       animation: navbar-open 0.7s ease;
       transition: all 0.5s ease;
+      margin-left: 2.3rem;
+      margin-right: 2.3rem;
     }
 
     .nav-ul.nav-deactive {
@@ -188,6 +195,8 @@ nav{
       transform: translateY(-1000px);
       animation: navbar-close 0.7s ease;
       transition: all 0.5s ease;
+      margin-left: 2.3rem;
+      margin-right: 2.3rem;
     }
 
     .getstarted {
@@ -204,11 +213,13 @@ nav{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top:7rem;
-  padding-bottom:1.5rem;
-  height: 125vh;
+  padding-bottom:3rem;
+  height: 155.7vh;
+  width: 100%;
   }
 
 .images-container{
+  overflow-y: hidden;
   height: 100%;
   width: 100%;
   position: relative;
@@ -221,7 +232,8 @@ nav{
   width: 100%;
   height: 100%;
   background-image: url('/images/city.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   object-fit: cover;
   background-color: transparent;
   z-index: 10;
@@ -241,23 +253,10 @@ nav{
 .center-text p{
 
   color: white;
-  font-family: "Roboto Mono", serif;
-  font-size: 6.5em;
+  font-family: "Geist Mono", monospace;
+  font-size: 5rem;
   font-weight: 600;
   background-color: transparent;
-}
-
-.image-mountain{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/images/mountain.png');
-  background-size: cover;
-  object-fit: cover;
-  background-color: transparent;
-  z-index: 8;
 }
 
 .image-moon{
@@ -267,7 +266,8 @@ nav{
   width: 100%;
   height: 100%;
   background-image: url('/images/moon.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   object-fit: cover;
   background-color: transparent;
   z-index: 7;
@@ -280,8 +280,248 @@ nav{
   width: 100%;
   height: 100%;
   background-image: url('/images/sky.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   object-fit: cover;
   background-color: transparent;
   z-index: 6;
+}
+
+.about-container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.spec-font-spendyser{
+  font-family: "Jersey 15", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.spec-font-other1{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.spec-font-other2{
+  font-size: 1.1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+
+.about-container h4{
+  font-family: "Geist Mono", monospace;
+  color: rgb(153 153 153) ; 
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.about-container p{
+  font-family: "Geist Mono", monospace;
+  color: rgb(153 153 153) ; 
+  font-size: .89rem;
+  text-align: center;
+  font-weight: 300;
+  line-height: 30px;
+}
+/* main lanch */
+
+@media (max-width: 1024px) {
+
+  .center-text p{
+    font-size: 4rem;
+  }
+  .container-main{
+    height: 136vh;
+
+    }
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  .center-text p{
+    font-size: 2.5rem;
+  }
+  
+  .container-main{
+    height: 112vh;
+
+    }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+
+}
+
+@media (max-width: 526px) {
+
+  .center-text p{
+    font-size: 2rem;
+  }
+
+  .container-main{
+    height: 79.8vh;
+
+    }
+  
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+
+}
+
+@media (max-width: 425px) {
+
+  .center-text p{
+    font-size: 1.5rem;
+  }
+  
+  .container-main{
+    height: 68.3vh;
+
+  }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .center-text p{
+    font-size: 1rem;
+  }
+
+  .container-main{
+    height: 62.6vh;
+
+  }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .center-text p{
+    font-size: 1rem;
+  }
+
+  .container-main{
+    height: 56.4vh;
+
+  }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
 }
