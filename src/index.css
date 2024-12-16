@@ -1,9 +1,12 @@
 *{
   background-color: #000000;
-  overflow-x:hidden;
   margin: none;
   padding: none;
   box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 a{
@@ -36,7 +39,6 @@ nav{
   border-radius: 10px;
   padding-left: .5rem;
   padding-right: .5rem;
-
 }
 
 .logoname{
@@ -296,6 +298,7 @@ nav{
   width: 100%;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  padding-bottom: 5rem;
 }
 
 .spec-font-spendyser{
