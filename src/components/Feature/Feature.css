@@ -11,6 +11,7 @@
   padding-top: 2.5rem;
   color: white;
   height: 700vh;
+
 }
 
 .feature-heading{
@@ -44,20 +45,45 @@
 
 
 .left-heading{
-  font-family: "Geist Mono", monospace;
+  font-family: "Roboto Mono", serif;
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
+}
+
+.size-matters{
+  font-size: 3rem;
+  color:rgb(233, 222, 211); 
+}
+
+.Oswald{
+  font-family: "Oswald", sans-serif;
 
 }
 
-.left-text{
-  font-family: "Geist Mono", monospace;
-  color: rgb(202, 199, 199) ; 
-  font-size: .89rem;
-  font-weight: 300;
-  line-height: 30px;
+.Jersey{
+  font-family: "Jersey 15", sans-serif;
+}
 
+.Geist-Mono{
+  font-family: "Geist Mono", monospace;
+}
+
+.Roboto-Mono{
+  font-family: "Roboto Mono", serif;
+}
+
+.Roboto{
+  font-family: "Roboto", serif;
+}
+
+
+.left-text{
+  font-family: "Roboto Mono", serif;
+  color: rgb(202, 199, 199) ; 
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .feature1-container{

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import './MainLanch.css'
 
 export const MainLanch = () =>{
 

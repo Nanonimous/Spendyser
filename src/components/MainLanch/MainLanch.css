@@ -1,0 +1,320 @@
+/* main section  */
+
+.container-main{
+  color:  white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top:7rem;
+  padding-bottom:3rem;
+  height: 155.7vh;
+  width: 100%;
+  }
+
+.images-container{
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.image-city{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/city.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.center-text{
+  top: -1em;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 9;
+  display: flex; 
+  justify-content: center; 
+}
+
+.center-text p{
+
+  color: white;
+  font-family: "Geist Mono", monospace;
+  font-size: 5rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.image-moon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/moon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: transparent;
+  z-index: 7;
+}
+
+.image-sky{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/sky.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: transparent;
+  z-index: 6;
+}
+
+.about-container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+.spec-font-spendyser{
+  font-family: "Jersey 15", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.spec-font-other1{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.spec-font-other2{
+  font-size: 1.1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+
+.about-container h4{
+  font-family: "Geist Mono", monospace;
+  color: rgb(153 153 153) ; 
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.about-container p{
+  font-family: "Geist Mono", monospace;
+  color: rgb(153 153 153) ; 
+  font-size: .89rem;
+  text-align: center;
+  font-weight: 300;
+  line-height: 30px;
+}
+/* main lanch */
+
+@media (max-width: 1024px) {
+
+  .center-text p{
+    font-size: 4rem;
+  }
+  .container-main{
+    height: 136vh;
+
+    }
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  .center-text p{
+    font-size: 2.5rem;
+  }
+  
+  .container-main{
+    height: 112vh;
+
+    }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+
+}
+
+@media (max-width: 526px) {
+
+  .center-text p{
+    font-size: 2rem;
+  }
+
+  .container-main{
+    height: 79.8vh;
+
+    }
+  
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+
+}
+
+@media (max-width: 425px) {
+
+  .center-text p{
+    font-size: 1.5rem;
+  }
+  
+  .container-main{
+    height: 68.3vh;
+
+  }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .center-text p{
+    font-size: 1rem;
+  }
+
+  .container-main{
+    height: 62.6vh;
+
+  }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .center-text p{
+    font-size: 1rem;
+  }
+
+  .container-main{
+    height: 56.4vh;
+
+  }
+
+  .center-text{
+    top: -1em;
+    left: 0em;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    display: flex; 
+    justify-content: center; 
+  }
+
+}
