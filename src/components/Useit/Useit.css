@@ -1,55 +1,47 @@
-.useit-container{
-  border: 1px solid white;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-
-}
-.Oswald{
+.Oswald {
   font-family: "Oswald", sans-serif;
-
 }
 
-.Jersey{
+.Jersey {
   font-family: "Jersey 15", sans-serif;
 }
 
-.Geist-Mono{
+.Geist-Mono {
   font-family: "Geist Mono", monospace;
 }
 
-.Roboto-Mono{
+.Roboto-Mono {
   font-family: "Roboto Mono", serif;
 }
 
-.Roboto{
+.Roboto {
   font-family: "Roboto", serif;
 }
 
-.title-container{
+.title-container {
   display: flex;
   justify-content: center;
 }
 
-.title-container p{
+.title-container p {
   color: #E9DED3;
   font-size: 3rem;
 }
 
-.titleitis{
+.titleitis {
   font-size: 4.5rem;
 }
 
-.button-container{
+.button-container {
   display: flex;
   justify-content: center;
 }
 
-.getstarted:hover{
-  background-color: #CDCDCD; 
+.getstarted:hover {
+  background-color: #CDCDCD;
 }
 
-.getstarted-ham{
+.getstarted-ham {
   display: flex;
   align-items: center;
   font-family: "Geist Mono", monospace;
@@ -58,16 +50,61 @@
   background-color: #FFFFFF;
   color: black !important;
   padding: 14px;
-  border-radius:10px;  
+  border-radius: 10px;
   cursor: pointer;
   transition: all .4s ease;
 }
 
-.getstarted-ham a{
+.getstarted-ham a {
   color: black !important;
   background-color: inherit;
 }
 
-.getstarted-ham:hover{
-  background-color: #CDCDCD; 
+.getstarted-ham:hover {
+  background-color: #CDCDCD;
 }
+
+.img-container {
+  position: relative;
+}
+
+.get-started{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 10;
+}
+
+.button {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 20;
+  background-color: transparent;
+  transition: padding-top 0.2s ease; /* Smooth transition */
+}
+
+
+
+
+
+/* Apply the active effect when the button is pressed */
+.button.pressed {
+  padding-top: 20px; /* Simulating the active effect */
+}
+
+.hover-area {
+  position: absolute;
+  left: 47%;
+  top: 22rem;
+  width: 100px; /* Adjust the hoverable width */
+  height: 50px; /* Adjust the hoverable height */
+  cursor: pointer;
+  z-index: 30;
+  background-color: transparent;
+}
+
+/* Optional: Add hover effect on hoverable area */
+/* Optional styling: Add animations or effects to the button */

@@ -1,19 +1,37 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import './Useit.css';
 
-export const Useit = () =>{
+export const Useit = () => {
+  const [isPressed, setIsPressed] = useState(false);
+
+  // Handle mousedown event
+  const handleMouseDown = () => {
+    setIsPressed(true);
+  };
+
+  // Handle mouseup event
+  const handleMouseUp = () => {
+    setIsPressed(false);
+  };
+
   return (
     <>
       <div className="useit-container">
-        <div className="title-container">
-          <p className='Roboto-Mono'>Try <span className='titleitis Jersey'>Spendyzer</span> Now</p>
-        </div>
-        <div className="button-container">
-          <div className="getstarted">
-              <a href="">GET STARTED</a>
-          </div>
+        <div className="img-container">
+          <a href='https://zenotion.college/'> <div
+            className="hover-area"
+            onMouseDown={handleMouseDown}   // Trigger when mouse button is pressed
+            onMouseUp={handleMouseUp}       // Trigger when mouse button is released
+          ></div>
+          </a>
+          <img
+            src="/images/button.png"
+            className={`button ${isPressed ? 'pressed' : ''}`} // Apply 'pressed' class when button is pressed
+            alt=""
+          />
+          <img src="/images/startNow.png" className="get-started" alt="" />
         </div>
       </div>
     </>
-  )
-}
+  );
+};
