@@ -126,7 +126,9 @@
 }
 /* main lanch */
 
-@media (max-width: 1024px) {
+
+
+@media (min-width: 768px) and (max-width: 1024px){
 
   .center-text p{
     font-size: 4rem;
@@ -161,11 +163,36 @@
     background-repeat: no-repeat;
   }
 
+  .about-container h4{
+    font-size: 0.9rem;
+  }
+  
+  .about-container p{
+    font-size: .7rem;
+    font-weight: 300;
+    line-height: 30px;
+  }
 
-
+  .spec-font-spendyser{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.9rem;
+    font-weight: 200;
+  }
+  
+  .spec-font-other1{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .spec-font-other2{
+    font-size: 1rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+  }
+  
 }
 
-@media (max-width: 768px) {
+@media (min-width: 526px) and (max-width: 768px) {
 
   .center-text p{
     font-size: 2.5rem;
@@ -202,11 +229,37 @@
     background-repeat: no-repeat;
   }
 
+  .about-container h4{
+    font-size: 0.8rem;
+  }
+  
+  .about-container p{
+    font-size: .65rem;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .spec-font-spendyser{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 200;
+  }
+  
+  .spec-font-other1{
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .spec-font-other2{
+    font-size: 0.95rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+  }
 
 
 }
 
-@media (max-width: 526px) {
+@media (min-width: 425px) and (max-width: 526px) {
 
   .center-text p{
     font-size: 2rem;
@@ -243,11 +296,37 @@
     background-repeat: no-repeat;
   }
 
+  .about-container h4{
+    font-size: 0.7rem;
+  }
+  
+  .about-container p{
+    font-size: .65rem;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .spec-font-spendyser{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  
+  .spec-font-other1{
+    font-size: 0.87rem;
+    font-weight: 500;
+  }
+  
+  .spec-font-other2{
+    font-size: 0.87rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+  }
 
 
 }
 
-@media (max-width: 425px) {
+@media (min-width: 375px) and (max-width: 425px) {
 
   .center-text p{
     font-size: 1.5rem;
@@ -269,9 +348,50 @@
     justify-content: center; 
   }
 
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .about-container h4{
+    font-size: 0.65rem;
+  }
+  
+  .about-container p{
+    font-size: .65rem;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .spec-font-spendyser{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 200;
+  }
+  
+  .spec-font-other1{
+    font-size: 0.83rem;
+    font-weight: 500;
+  }
+  
+  .spec-font-other2{
+    font-size: 0.83rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+  }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width:375px) {
 
   .center-text p{
     font-size: 1rem;
@@ -291,6 +411,48 @@
     z-index: 9;
     display: flex; 
     justify-content: center; 
+  }
+
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .about-container h4{
+    font-size: 0.66rem;
+  }
+  
+  .about-container p{
+    font-size: .6rem;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .spec-font-spendyser{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+  
+  .spec-font-other1{
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .spec-font-other2{
+    font-size: 0.8rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
   }
 
 }
@@ -317,4 +479,45 @@
     justify-content: center; 
   }
 
+  .image-sky{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-city{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-moon{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .about-container h4{
+    font-size: 0.66rem;
+  }
+  
+  .about-container p{
+    font-size: .6rem;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .spec-font-spendyser{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+  
+  .spec-font-other1{
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .spec-font-other2{
+    font-size: 0.8rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+  }
 }

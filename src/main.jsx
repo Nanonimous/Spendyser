@@ -4,11 +4,14 @@ import './index.css'
 import { Navbar } from './components/Navbar/Navbar.jsx'
 import { MainLanch } from './components/MainLanch/MainLanch.jsx'
 import { Feature } from './components/Feature/Feature.jsx'
+import { Useit } from './components/Useit/Useit.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
       <Navbar />
       <MainLanch />
       <Feature />
+      <Useit />
   </StrictMode>,
 )

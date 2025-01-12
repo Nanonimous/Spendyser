@@ -1,0 +1,73 @@
+.useit-container{
+  border: 1px solid white;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+
+}
+.Oswald{
+  font-family: "Oswald", sans-serif;
+
+}
+
+.Jersey{
+  font-family: "Jersey 15", sans-serif;
+}
+
+.Geist-Mono{
+  font-family: "Geist Mono", monospace;
+}
+
+.Roboto-Mono{
+  font-family: "Roboto Mono", serif;
+}
+
+.Roboto{
+  font-family: "Roboto", serif;
+}
+
+.title-container{
+  display: flex;
+  justify-content: center;
+}
+
+.title-container p{
+  color: #E9DED3;
+  font-size: 3rem;
+}
+
+.titleitis{
+  font-size: 4.5rem;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.getstarted:hover{
+  background-color: #CDCDCD; 
+}
+
+.getstarted-ham{
+  display: flex;
+  align-items: center;
+  font-family: "Geist Mono", monospace;
+  font-weight: 560;
+  font-size: .85rem;
+  background-color: #FFFFFF;
+  color: black !important;
+  padding: 14px;
+  border-radius:10px;  
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.getstarted-ham a{
+  color: black !important;
+  background-color: inherit;
+}
+
+.getstarted-ham:hover{
+  background-color: #CDCDCD; 
+}

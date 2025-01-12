@@ -15,9 +15,16 @@ export const Navbar = () => {
           }
       };
 
+      let nav = document.getElementById('navbar')
       // Attach the event listener on mount
       window.addEventListener('resize', handleResize);
-
+      window.addEventListener('scroll',()=>{
+        if(window.scrollY>0){
+          nav.classList.add("nav-shadoww");
+        }else{
+          nav.classList.remove("nav-shadoww");
+        }
+      })
       // Cleanup the event listener on unmount
       return () => {
           window.removeEventListener('resize', handleResize);
@@ -26,7 +33,7 @@ export const Navbar = () => {
     return (
       <nav>
         <div className="container-navbar">
-          <div className="main-navbar">
+          <div className="main-navbar" id='navbar'>
               <a href="#" className="logoname">Spendyser</a>
 
               <div className="hamburger" onClick={toggleMenu}>

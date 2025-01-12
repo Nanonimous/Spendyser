@@ -12,9 +12,7 @@ export const Feature = () =>{
       if (right_bar && left_bar) { 
         window.addEventListener('scroll',()=>{
           let x = window.scrollY;
-          console.log("live",x)
           let w = window.innerWidth;
-          console.log("iam",w)
           let one = 2574
           let two = 3974
           let three = 4274
