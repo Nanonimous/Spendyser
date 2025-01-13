@@ -5,7 +5,7 @@ import { Navbar } from './components/Navbar/Navbar.jsx'
 import { MainLanch } from './components/MainLanch/MainLanch.jsx'
 import { Feature } from './components/Feature/Feature.jsx'
 import { Useit } from './components/Useit/Useit.jsx'
-
+import { Footer } from './components/Footer/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,5 +13,6 @@ createRoot(document.getElementById('root')).render(
       <MainLanch />
       <Feature />
       <Useit />
+      <Footer />
   </StrictMode>,
 )

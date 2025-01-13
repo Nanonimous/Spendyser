@@ -17,6 +17,9 @@ export const Useit = () => {
   return (
     <>
       <div className="useit-container">
+        <div className="title-container">
+        <h2 className='useit-text Roboto-Mono'>So, What Your <span className='text1 Geist-Mono'>Waiting</span> for ?</h2>
+        </div>
         <div className="img-container">
           <a href='https://zenotion.college/'> <div
             className="hover-area"
